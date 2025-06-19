@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Codedex Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0c0e23;
+      color: #fff;
+    }
+    header {
+      background-color: #13152f;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header nav a {
+      color: #ccc;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .container {
+      display: flex;
+      padding: 2rem;
+    }
+    .main {
+      flex: 3;
+      padding-right: 2rem;
+    }
+    .sidebar {
+      flex: 1;
+    }
+    .greeting {
+      background-color: #1d2041;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    .card {
+      background-color: #1d2041;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    .modules {
+      margin-top: 2rem;
+    }
+    .modules h2 {
+      margin-bottom: 1rem;
+    }
+    .module-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    .module-card {
+      background-color: #191b36;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    .event, .profile-box {
+      background-color: #1d2041;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <strong style="color:#ffcc00; font-size: 1.2rem;">Codedex</strong>
+      <nav style="display:inline-block;">
+        <a href="#">Learn</a>
+        <a href="#">Practice</a>
+        <a href="#">Build</a>
+        <a href="#">Community</a>
+      </nav>
+    </div>
+    <div class="profile">
+      <span>😺</span>
+      <span>ERIC0723</span>
+    </div>
+  </header>
+  <div class="container">
+    <main class="main">
+      <div class="greeting">Howdy @ERIC0723! How are you feeling?</div>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>📚 Learning Forge</h3>
+          <p>Track your progress across chapters and subjects.</p>
+        </div>
+        <div class="card">
+          <h3>🛠 Builds</h3>
+          <p>Try out your code in the integrated playground.</p>
+        </div>
+        <div class="card">
+          <h3>🔥 #30NitesOfCode</h3>
+          <p>Commit to 30 days of consistent learning!</p>
+        </div>
+        <div class="card">
+          <h3>🎯 Quest Board (Coming Soon)</h3>
+          <p>Complete missions for XP and growth.</p>
+        </div>
+      </div>
+
+      <div class="modules">
+        <h2>New Study Modules</h2>
+        <div class="module-grid">
+          <div class="module-card">
+            <h3>🤖 AI</h3>
+            <p>Neural nets, backpropagation, and more.</p>
+            <button>Start</button>
+          </div>
+          <div class="module-card">
+            <h3>📐 Math</h3>
+            <p>Combinatorics, logic, vectors, and more.</p>
+            <button>Start</button>
+          </div>
+          <div class="module-card">
+            <h3>🌲 Algorithm</h3>
+            <p>Sorting, DP, trees, and graph theory.</p>
+            <button>Start</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <aside class="sidebar">
+      <div class="profile-box">
+        <h3>ERIC0723</h3>
+        <p>Level 1</p>
+        <button>View Profile</button>
+      </div>
+      <div class="event">
+        <h4>Upcoming Events</h4>
+        <ul>
+          <li>📅 Meet n Greet - Jun 26 @ 3:00PM</li>
+          <li>📅 Build-a-Bot - Jul 2 @ 1:00PM</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>
